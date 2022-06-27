@@ -1,0 +1,45 @@
+@use "../abstract/function" as func;
+@use "../utilities/anime";
+
+.header {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+
+    &--logo>a {
+        font-size: 1.5rem;
+        font-weight: bolder;
+        //color: func.theme-color("primary");
+        animation: colors 10s infinite;
+
+        &:hover {
+            color: func.theme-color("primary-hover");
+            transition: 1000ms;
+        }
+    }
+    &--menu {
+        display: flex;
+        flex-wrap: wrap;
+
+        .active {
+            color: func.theme-color("active");
+            
+        }
+
+        &--list {
+                margin-left: 1.5rem;
+                padding: 0.5rem;
+                color: func.theme-color("primary");
+        }
+        &--list:hover {
+                background-color: func.theme-color("primary-hover");
+                color: func.theme-color("light");
+                transition: 1000ms;
+        }
+    }
+        &--contact {
+            background-color: func.theme-color("secondary");
+            color:func.theme-color("light") ;
+        }
+}
