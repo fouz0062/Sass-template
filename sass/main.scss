@@ -1,6 +1,14 @@
 //reset
 @import "base/reset";
+
 //container w-80%
 @import "layout/container";
+
 //header
 @import "layout/header";
+@import "layout/content";
+
+//components
+@import "components/button";
+//utilities
+@import "utilities/background-anime"

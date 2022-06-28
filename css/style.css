@@ -31,11 +31,20 @@ img {
     color: rgb(14, 137, 96);
   }
 }
+@keyframes box {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
 .header {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
+  margin-top: 2rem;
 }
 .header--logo > a {
   font-size: 1.5rem;
@@ -57,15 +66,210 @@ img {
   margin-left: 1.5rem;
   padding: 0.5rem;
   color: rgb(27, 240, 169);
+  border: none;
+  outline: none;
 }
 .header--menu--list:hover {
   background-color: rgb(126, 250, 209);
   color: #fff;
   transition: 1000ms;
 }
-.header--contact {
-  background-color: rgb(245, 180, 31);
+
+.banner {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-top: 10rem;
+  align-items: center;
+}
+.banner--left {
+  width: 40%;
+}
+.banner--left--title {
+  color: rgb(27, 240, 169);
+  font-size: 2rem;
+  font-weight: bolder;
+}
+.banner--left--para {
+  padding: 0.5rem 0;
+  margin-bottom: 0.5rem;
+  color: rgba(0, 0, 0, 0.5);
+  line-height: 2;
+}
+.banner--left .watch-free {
+  padding-right: 3px;
+}
+.banner--left .btn-space {
+  margin-left: 8px;
+}
+
+.btn, .btn-outline, .btn-primary {
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  font-weight: bold;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+.btn-primary {
+  background-color: rgb(27, 240, 169);
   color: #fff;
+  border: 1px solid rgb(27, 240, 169);
+}
+.btn-primary:hover {
+  background-color: rgb(126, 250, 209);
+}
+.btn-outline {
+  background-color: transparent;
+  border: 1px solid rgb(245, 180, 31);
+}
+.btn-outline:hover {
+  background-color: rgb(247, 206, 110);
+}
+
+@keyframes colors {
+  0% {
+    color: rgb(27, 240, 169);
+  }
+  50% {
+    color: rgb(245, 180, 31);
+  }
+  100% {
+    color: rgb(14, 137, 96);
+  }
+}
+@keyframes box {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+.box1 {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  border: 3px solid green;
+  border-radius: 5px;
+  top: 20%;
+  left: 5%;
+  z-index: -1;
+  animation: box linear 5s infinite;
+}
+
+.box2 {
+  position: absolute;
+  width: 15px;
+  height: 15px;
+  border: 3px solid blue;
+  border-radius: 5px;
+  top: 80%;
+  left: 30%;
+  z-index: -1;
+  animation: box linear 5s infinite;
+}
+
+.box3 {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  border: 3px solid orange;
+  border-radius: 5px;
+  top: 60%;
+  left: 90%;
+  z-index: -1;
+  animation: box linear 5s infinite;
+}
+
+.heart1 {
+  position: absolute;
+  font-size: 1rem;
+  color: red;
+  top: 90%;
+  left: 20%;
+  z-index: -1;
+  animation: box linear 5s infinite;
+}
+
+.heart2 {
+  position: absolute;
+  font-size: 2rem;
+  color: purple;
+  top: 20%;
+  left: 80%;
+  z-index: -1;
+  animation: box linear 5s infinite;
+}
+
+.heart3 {
+  position: absolute;
+  font-size: 1.2rem;
+  color: brown;
+  top: 90%;
+  right: 5%;
+  z-index: -1;
+  animation: box linear 5s infinite;
+}
+
+.heart4 {
+  position: absolute;
+  font-size: 2rem;
+  color: indianred;
+  top: 25%;
+  left: 30%;
+  z-index: -1;
+  animation: box linear 5s infinite;
+}
+
+.plus1 {
+  position: absolute;
+  font-size: 3rem;
+  color: indianred;
+  top: 50%;
+  left: 3%;
+  z-index: -1;
+  animation: box linear 5s infinite;
+}
+
+.plus2 {
+  position: absolute;
+  font-size: 2.5rem;
+  color: purple;
+  top: 10%;
+  left: 45%;
+  z-index: -1;
+  animation: box linear 5s infinite;
+}
+
+.plus3 {
+  position: absolute;
+  font-size: 1.5rem;
+  color: green;
+  top: 90%;
+  left: 45%;
+  z-index: -1;
+  animation: box linear 5s infinite;
+}
+
+.plus4 {
+  position: absolute;
+  font-size: 2rem;
+  color: magenta;
+  top: 30%;
+  right: 3%;
+  z-index: -1;
+  animation: box linear 5s infinite;
+}
+
+.plus5 {
+  position: absolute;
+  font-size: 3rem;
+  color: magenta;
+  top: 40%;
+  left: 20%;
+  z-index: -1;
+  animation: box linear 5s infinite;
 }
 
 /*# sourceMappingURL=style.css.map */

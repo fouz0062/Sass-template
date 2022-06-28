@@ -6,6 +6,7 @@
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
+    margin-top: 2rem;
 
     &--logo>a {
         font-size: 1.5rem;
@@ -31,6 +32,8 @@
                 margin-left: 1.5rem;
                 padding: 0.5rem;
                 color: func.theme-color("primary");
+                border: none;
+                outline: none;
         }
         &--list:hover {
                 background-color: func.theme-color("primary-hover");
@@ -38,8 +41,4 @@
                 transition: 1000ms;
         }
     }
-        &--contact {
-            background-color: func.theme-color("secondary");
-            color:func.theme-color("light") ;
-        }
 }

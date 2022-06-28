@@ -1,0 +1,33 @@
+@use "../abstract/function" as func;
+.banner {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top:10rem;
+    align-items: center;
+
+    &--left {
+        width: 40%;        
+
+        &--title {
+            color: func.theme-color("primary");
+            font-size: 2rem;
+            font-weight: bolder;
+        }
+
+        &--para {
+            padding: 0.5rem 0;
+            margin-bottom: 0.5rem;
+            color: func.theme-color("grey");
+            line-height: 2;
+        }
+
+        .watch-free {
+            padding-right: 3px;
+        }
+
+        .btn-space {
+            margin-left: 8px;
+        }
+    }
+}
