@@ -326,13 +326,60 @@ img {
   border: 2px solid rgb(27, 240, 169);
 }
 .contact-card .contact--flex--left .textarea {
-  resize: vertical;
+  resize: none;
 }
 .contact-card .contact--flex--right {
   width: 40%;
 }
 
 /***** End contact *****/
+/***** footer *****/
+.footer-background {
+  background-color: rgb(27, 240, 169);
+}
+
+.footer--content {
+  padding: 2rem 0;
+  text-align: center;
+}
+.footer--content--title {
+  font-size: 1.2rem;
+  color: #fff;
+  padding-bottom: 0.5rem;
+}
+.footer--content--para {
+  color: rgba(0, 0, 0, 0.5);
+  padding-bottom: 0.5rem;
+}
+.footer--content--para--span a {
+  color: #fff;
+  transition: 2s;
+}
+.footer--content--para--span a:hover {
+  text-shadow: 2px 2px 5px #000;
+}
+.footer--content .social--contact {
+  margin: 1rem auto;
+  text-align: center;
+}
+.footer--content .social--contact a {
+  color: rgba(0, 0, 0, 0.5);
+}
+.footer--content .social--contact i {
+  padding: 0 0.5rem;
+  font-size: 1.8rem;
+  transition: 2s;
+}
+.footer--content .social--contact i:hover {
+  color: #fff;
+  text-shadow: 2px 2px 5px #000;
+}
+.footer--content .rights {
+  font-size: 0.8rem;
+  color: rgba(0, 0, 0, 0.5);
+}
+
+/***** End footer *****/
 .btn, .btn-outline, .btn-primary {
   padding: 0.5rem 1rem;
   font-size: 1rem;
