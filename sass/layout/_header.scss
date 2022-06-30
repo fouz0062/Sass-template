@@ -3,61 +3,108 @@
 
 @use "../abstract/mixins" as mix;
 
+.header1 {
+  position: sticky;
+    top: 0;
+    background-color: func.theme-color("light");
+    padding: 0.2rem 0;
+    z-index: 100;
+    box-shadow: 2px 2px 5px black;
+}
 .header {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  
+
+  @include mix.responsive(xs) {
+    margin-top: 1rem;
+  }
+
+  &--logo > a {
+    font-size: 1.5rem;
+    font-weight: bolder;
+    //color: func.theme-color("primary");
+    animation: colors 10s infinite;
+
+    &:hover {
+      color: func.theme-color("primary-hover");
+      transition: 1000ms;
+    }
+  }
+  .burger-icon {
+    @include mix.responsive(xs) {
+      font-size: 2rem;
+    }
+
+    @include mix.responsive(lg) {
+      display: none;
+    }
+
+    .hidden {
+      display: none;
+    }
+  }
+  &--menu {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: center;
-    margin-top: 2rem;
 
     @include mix.responsive(xs) {
-            margin-top:1rem;
-        }
+      display: none;
+      position: absolute;
+      background-color: func.theme-color("primary"); 
+      left: 0;
+      top: 90%;
+      width: 100vw;
+      height: 100vh;
+      text-align: center;
+    }
 
-    &--logo>a {
-        font-size: 1.5rem;
-        font-weight: bolder;
-        //color: func.theme-color("primary");
-        animation: colors 10s infinite;
+    .active {
+      color: func.theme-color("active");
+    }
 
-        &:hover {
-            color: func.theme-color("primary-hover");
-            transition: 1000ms;
+    &--list {
+      margin-left: 1.5rem;
+      padding: 0.5rem;
+      color: func.theme-color("primary");
+      border: none;
+      outline: none;
+
+    @include mix.responsive(xs) {
+            color: white;
+            font-size: 1.2rem;
+            margin-left:0 ;
         }
     }
-    .burger-icon {
+    &--list:hover {
+      background-color: func.theme-color("primary-hover");
+      color: func.theme-color("light");
+      transition: 1000ms;
+    }
+
+    .contactbtn {
+
         @include mix.responsive(xs) {
-                font-size: 2rem;
+                font-weight: 400 !important;
+                font-size: 1.2rem;
             }
-
-                        @include mix.responsive(lg) {
-                            display: none;
-                        }
+        
     }
-    &--menu {
-        display: flex;
-        flex-wrap: wrap;
+  }
 
-        @include mix.responsive(xs) {
-            display: none;
-        }
+  .show {
+      @include mix.responsive(xs) {
+          display: block;
+      }
+  }
 
-        .active {
-            color: func.theme-color("active");
-            
+  .show li {
+    @include mix.responsive(xs) {
+           padding: 1rem 0;
+           text-align: center;
+           margin: 0 auto;
         }
-
-        &--list {
-                margin-left: 1.5rem;
-                padding: 0.5rem;
-                color: func.theme-color("primary");
-                border: none;
-                outline: none;
-        }
-        &--list:hover {
-                background-color: func.theme-color("primary-hover");
-                color: func.theme-color("light");
-                transition: 1000ms;
-        }
-    }
+  }
 }

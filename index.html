@@ -18,12 +18,17 @@
   </head>
   <body>
     <!-- ========== Start nav ========== -->
-    <div class="header container">
-      <div class="header--logo">
+    <div class="header1">
+     <div>
+        <div class="header container">
+         <div class="header--logo">
         <a href="/">Logo Design</a>
       </div>
       <div>
-        <div class="burger-icon"><i class="fa-solid fa-bars"></i></div>
+        <div class="burger-icon">
+            <i class="navicon fa-solid fa-bars"></i>
+            <i class="navicon fa-solid fa-xmark hidden"></i>
+        </div>
         <ul class="header--menu">
           <li><a href="#home" class="header--menu--list active">home</a></li>
           <li><a href="#about" class="header--menu--list">about</a></li>
@@ -36,6 +41,8 @@
           </li>
         </ul>
       </div>
+     </div>
+     </div>
     </div>
     <!-- ========== End nav ========== -->
     <!-- ========== Start content ========== -->
@@ -53,7 +60,7 @@
       <div class="plus4"><i class="fa-regular fa-plus"></i></div>
       <div class="plus5"><i class="fa-regular fa-plus"></i></div>
     </div>
-    <div class="banner container">
+    <div id="home" class="banner container">
       <div class="banner--left">
         <h2 class="banner--left--title">
           #1 Lorem ipsum dolor sit. Lorem, ipsum dolor.
@@ -76,7 +83,7 @@
       </div>
     </div>
     <!-- ========== Start aboutus ========== -->
-    <div class="aboutus">
+    <div id="about" class="aboutus">
       <div class="aboutus--flex container">
         <div class="aboutus--flex--left">
           <img src="image/aboutus-img.png" alt="" />
@@ -96,7 +103,7 @@
     <!-- ========== End aboutus ========== -->
     <!-- ========== Start roadmap ========== -->
     <div class="container">
-      <div class="roadmap">
+      <div id="roadmap" class="roadmap">
         <h3 class="roadmap--title">RoadMap expertise</h3>
         <p class="roadmap--para">
           Lorem ipsum dolor sit amet consectetur adipisicing elit.
@@ -143,7 +150,7 @@
     <!-- ========== Start cards ========== -->
     <div class="card--background">
       <div class="container">
-        <div class="course">
+        <div id="courses" class="course">
           <h3 class="course--title">Courses To Enroll</h3>
           <p class="course--para">
             Lorem, ipsum dolor sit amet consectetur adipisicing elit.
@@ -192,7 +199,7 @@
     <!-- ========== End cards ========== -->
     <!-- ========== Start contact ========== -->
     <div class="contact-background">
-      <div class="container-2 contact-card">
+      <div id="contact" class="container-2 contact-card">
         <div class="contact--flex">
           <div class="contact--flex--left">
             <h4 class="contact--flex--left--title">Send Us A Message</h4>

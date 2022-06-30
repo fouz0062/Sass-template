@@ -5,6 +5,7 @@
   box-sizing: border-box;
   list-style: none;
   font-family: "Poppins", sans-serif;
+  scroll-behavior: smooth;
 }
 
 a {
@@ -62,12 +63,20 @@ img {
     transform: rotate(360deg);
   }
 }
+.header1 {
+  position: sticky;
+  top: 0;
+  background-color: #fff;
+  padding: 0.2rem 0;
+  z-index: 100;
+  box-shadow: 2px 2px 5px black;
+}
+
 .header {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
-  margin-top: 2rem;
 }
 @media only screen and (max-width: 900px) {
   .header {
@@ -93,6 +102,9 @@ img {
     display: none;
   }
 }
+.header .burger-icon .hidden {
+  display: none;
+}
 .header--menu {
   display: flex;
   flex-wrap: wrap;
@@ -100,6 +112,13 @@ img {
 @media only screen and (max-width: 900px) {
   .header--menu {
     display: none;
+    position: absolute;
+    background-color: rgb(27, 240, 169);
+    left: 0;
+    top: 90%;
+    width: 100vw;
+    height: 100vh;
+    text-align: center;
   }
 }
 .header--menu .active {
@@ -112,10 +131,35 @@ img {
   border: none;
   outline: none;
 }
+@media only screen and (max-width: 900px) {
+  .header--menu--list {
+    color: white;
+    font-size: 1.2rem;
+    margin-left: 0;
+  }
+}
 .header--menu--list:hover {
   background-color: rgb(126, 250, 209);
   color: #fff;
   transition: 1000ms;
+}
+@media only screen and (max-width: 900px) {
+  .header--menu .contactbtn {
+    font-weight: 400 !important;
+    font-size: 1.2rem;
+  }
+}
+@media only screen and (max-width: 900px) {
+  .header .show {
+    display: block;
+  }
+}
+@media only screen and (max-width: 900px) {
+  .header .show li {
+    padding: 1rem 0;
+    text-align: center;
+    margin: 0 auto;
+  }
 }
 
 @keyframes colors {
