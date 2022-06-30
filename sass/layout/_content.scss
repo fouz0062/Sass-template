@@ -11,18 +11,26 @@
   align-items: center;
 
   @include mix.responsive(xs) {
-       flex-direction: column;
-       margin: 2rem auto;
+    flex-direction: column;
+    margin: 2rem auto;
+  }
+
+    &--right {
+      width: 50%;
+  
+      @include mix.responsive(xs) {
+        width: 100%;
+      }
     }
 
   &--left {
     width: 40%;
 
     @include mix.responsive(xs) {
-        width: 100%;
-        text-align: center;
-        margin: 1rem auto;
-      }
+      width: 100%;
+      text-align: center;
+      margin: 1rem auto;
+    }
 
     &--title {
       color: func.theme-color("primary");
@@ -30,9 +38,10 @@
       font-weight: bolder;
 
       @include mix.responsive(xs) {
-          font-size: 1.5rem;
-        }
+        font-size: 1.5rem;
+      }
     }
+    
 
     &--para {
       padding: 0.5rem 0;
@@ -41,8 +50,8 @@
       line-height: 2;
 
       @include mix.responsive(xs) {
-          font-size: 0.9rem;
-        }
+        font-size: 0.9rem;
+      }
     }
 
     .watch-free {
@@ -65,22 +74,30 @@
     justify-content: space-between;
     align-items: center;
 
+    &--left {
+      width: 40%;
+
+      @include mix.responsive(xs) {
+        width: 100%;
+      }
+    }
+
     &--right {
       width: 50%;
 
       @include mix.responsive(xs) {
-          width: 100%;
-          text-align: center;
-          margin: 2rem auto;
-        }
+        width: 100%;
+        text-align: center;
+        margin: 2rem auto;
+      }
 
       &--title {
         color: func.theme-color("light");
         font-size: 2rem;
 
         @include mix.responsive(xs) {
-            font-size: 1.5rem;
-          }
+          font-size: 1.5rem;
+        }
       }
 
       &--para {
@@ -89,8 +106,8 @@
         line-height: 2;
 
         @include mix.responsive(xs) {
-            font-size: 0.9rem;
-          }
+          font-size: 0.9rem;
+        }
       }
     }
   }
@@ -101,8 +118,6 @@
   margin: 2rem auto;
   text-align: center;
 
-  
-
   &--title {
     font-size: 1.5rem;
     padding-bottom: 1rem;
@@ -111,8 +126,8 @@
     color: func.theme-color("grey");
 
     @include mix.responsive(xs) {
-        font-size: 0.9rem;
-      }
+      font-size: 0.9rem;
+    }
   }
 
   &--line {
@@ -139,17 +154,17 @@
   margin: 5rem auto;
 
   @include mix.responsive(xs) {
-      flex-direction: column;
-      margin: 1rem auto;
-    }
+    flex-direction: column;
+    margin: 1rem auto;
+  }
 
   &--items {
     width: 30%;
     position: relative;
 
     @include mix.responsive(xs) {
-        width: 100%;
-      }
+      width: 100%;
+    }
 
     &--image {
       position: relative;
@@ -157,8 +172,8 @@
       margin-bottom: 2rem;
 
       @include mix.responsive(xs) {
-          margin-bottom: 0.5rem;
-        }
+        margin-bottom: 0.5rem;
+      }
 
       &::before {
         position: absolute;
@@ -173,8 +188,8 @@
         transition: 5s;
 
         @include mix.responsive(xs) {
-            display: none;
-          }
+          display: none;
+        }
       }
 
       &:hover {
@@ -193,8 +208,8 @@
       color: func.theme-color("primary");
 
       @include mix.responsive(xs) {
-          margin: 0.5rem auto;
-        }
+        margin: 0.5rem auto;
+      }
     }
 
     &--para {
@@ -202,8 +217,7 @@
 
       @include mix.responsive(xs) {
         margin-bottom: 2rem;
-        }
-      
+      }
     }
   }
 }
@@ -216,8 +230,8 @@
   padding: 2rem 0;
 
   @include mix.responsive(xs) {
-      padding: 1rem 0;
-    }
+    padding: 1rem 0;
+  }
 }
 
 .course {
@@ -229,8 +243,8 @@
     padding-bottom: 1rem;
 
     @include mix.responsive(xs) {
-            padding: 0.5rem 0;
-          }
+      padding: 0.5rem 0;
+    }
   }
 
   &--para {
@@ -238,8 +252,8 @@
     padding-bottom: 3rem;
 
     @include mix.responsive(xs) {
-font-size:0.9rem
-      }
+      font-size: 0.9rem;
+    }
   }
 }
 
@@ -249,8 +263,8 @@ font-size:0.9rem
   justify-content: space-between;
 
   @include mix.responsive(xs) {
-      flex-direction: column;
-    }
+    flex-direction: column;
+  }
 
   &--card {
     width: 25%;
@@ -260,9 +274,9 @@ font-size:0.9rem
     transition: 2s;
 
     @include mix.responsive(xs) {
-        width: 100%;
-        margin: 1rem auto;
-      }
+      width: 100%;
+      margin: 1rem auto;
+    }
 
     &:hover {
       box-shadow: 5px 5px 20px #000;
@@ -303,17 +317,17 @@ font-size:0.9rem
     align-items: center;
 
     @include mix.responsive(xs) {
-        flex-direction: column;
-        text-align: center;
-      }
+      flex-direction: column;
+      text-align: center;
+    }
 
     &--left {
       width: 55%;
       padding: 1rem;
 
       @include mix.responsive(xs) {
-          width: 100%;
-        }
+        width: 100%;
+      }
 
       &--title {
         font-size: 1.2rem;
@@ -338,16 +352,14 @@ font-size:0.9rem
         &:focus {
           border: 2px solid func.theme-color("primary");
         }
-
-        
       }
 
       .textarea {
         resize: none;
 
         @include mix.responsive(xs) {
-margin-bottom: 1rem;
-          }
+          margin-bottom: 1rem;
+        }
       }
     }
 
@@ -355,8 +367,8 @@ margin-bottom: 1rem;
       width: 40%;
 
       @include mix.responsive(xs) {
-          width: 100%;
-        }
+        width: 100%;
+      }
     }
   }
 }
@@ -391,7 +403,7 @@ margin-bottom: 1rem;
     }
   }
 
-.social--contact {
+  .social--contact {
     margin: 1rem auto;
     text-align: center;
 
@@ -414,6 +426,6 @@ margin-bottom: 1rem;
   .rights {
     font-size: 0.8rem;
     color: func.theme-color("grey");
-    }
+  }
 }
 /***** End footer *****/
