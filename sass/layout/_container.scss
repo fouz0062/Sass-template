@@ -1,9 +1,19 @@
+@use "../abstract/mixins" as mix;
 .container {
     width: 80%;
     margin: 1rem auto;
+
+    @include mix.responsive(xs) {
+           // margin-top: 0;
+           width: 90%;
+        }
 }
 
 .container-2 {
     width: 80%;
     margin: 0 auto;
+
+    @include mix.responsive(xs) {
+            width: 90%;
+        }
 }

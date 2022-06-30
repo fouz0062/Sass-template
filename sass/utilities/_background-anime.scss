@@ -1,126 +1,176 @@
 @use "./anime";
+
+@use "../abstract/mixins" as mix;
 .box1 {
-    position: absolute;
-    width: 20px;
-    height: 20px;
-    border: 3px solid green;
-    border-radius: 5px;
-    top: 20%;
-    left: 5%;
-    z-index: -1;
-    animation: box linear 5s infinite;
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  border: 3px solid green;
+  border-radius: 5px;
+  top: 20%;
+  left: 5%;
+  z-index: -1;
+  animation: box linear 5s infinite;
+
+  @include mix.responsive(xs) {
+    display: none;
+  }
 }
 
 .box2 {
-    position: absolute;
-    width: 15px;
-    height: 15px;
-    border: 3px solid blue;
-    border-radius: 5px;
-    top: 80%;
-    left: 30%;
-    z-index: -1;
-    animation: box linear 5s infinite;
+  position: absolute;
+  width: 15px;
+  height: 15px;
+  border: 3px solid blue;
+  border-radius: 5px;
+  top: 80%;
+  left: 30%;
+  z-index: -1;
+  animation: box linear 5s infinite;
+
+  @include mix.responsive(xs) {
+    display: none;
+  }
 }
 
 .box3 {
-    position: absolute;
-    width: 20px;
-    height: 20px;
-    border: 3px solid orange;
-    border-radius: 5px;
-    top: 60%;
-    left: 90%;
-    z-index: -1;
-    animation: box linear 5s infinite;
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  border: 3px solid orange;
+  border-radius: 5px;
+  top: 60%;
+  left: 90%;
+  z-index: -1;
+  animation: box linear 5s infinite;
+
+  @include mix.responsive(xs) {
+    display: none;
+  }
 }
 
 .heart1 {
-    position: absolute;
-    font-size: 1rem;
-    color: red;
-    top: 90%;
-    left: 20%;
-    z-index: -1;
-    animation: box linear 5s infinite;
+  position: absolute;
+  font-size: 1rem;
+  color: red;
+  top: 90%;
+  left: 20%;
+  z-index: -1;
+  animation: box linear 5s infinite;
+
+  @include mix.responsive(xs) {
+    display: none;
+  }
 }
 
 .heart2 {
-    position: absolute;
-    font-size: 2rem;
-    color: purple;
-    top: 20%;
-    left: 80%;
-    z-index: -1;
-    animation: box linear 5s infinite;
+  position: absolute;
+  font-size: 2rem;
+  color: purple;
+  top: 20%;
+  left: 80%;
+  z-index: -1;
+  animation: box linear 5s infinite;
+
+  @include mix.responsive(xs) {
+    display: none;
+  }
 }
 
 .heart3 {
-    position: absolute;
-    font-size: 1.2rem;
-    color: brown;
-    top: 90%;
-    right: 5%;
-    z-index: -1;
-    animation: box linear 5s infinite;
+  position: absolute;
+  font-size: 1.2rem;
+  color: brown;
+  top: 90%;
+  right: 5%;
+  z-index: -1;
+  animation: box linear 5s infinite;
+
+  @include mix.responsive(xs) {
+    display: none;
+  }
 }
 
 .heart4 {
-    position: absolute;
-    font-size: 2rem;
-    color: indianred;
-    top: 25%;
-    left: 30%;
-    z-index: -1;
-    animation: box linear 5s infinite;
+  position: absolute;
+  font-size: 2rem;
+  color: indianred;
+  top: 25%;
+  left: 30%;
+  z-index: -1;
+  animation: box linear 5s infinite;
+
+  @include mix.responsive(xs) {
+    display: none;
+  }
 }
 
 .plus1 {
-    position: absolute;
-    font-size: 3rem;
-    color: indianred;
-    top: 50%;
-    left: 3%;
-    z-index: -1;
-    animation: box linear 5s infinite;
+  position: absolute;
+  font-size: 3rem;
+  color: indianred;
+  top: 50%;
+  left: 3%;
+  z-index: -1;
+  animation: box linear 5s infinite;
+
+  @include mix.responsive(xs) {
+    display: none;
+  }
 }
 
 .plus2 {
-    position: absolute;
-    font-size: 2.5rem;
-    color: purple;
-    top: 10%;
-    left: 45%;
-    z-index: -1;
-    animation: box linear 5s infinite;
+  position: absolute;
+  font-size: 2.5rem;
+  color: purple;
+  top: 10%;
+  left: 45%;
+  z-index: -1;
+  animation: box linear 5s infinite;
+
+  @include mix.responsive(xs) {
+    display: none;
+  }
 }
 
 .plus3 {
-    position: absolute;
-    font-size: 1.5rem;
-    color: green;
-    top: 90%;
-    left: 45%;
-    z-index: -1;
-    animation: box linear 5s infinite;
+  position: absolute;
+  font-size: 1.5rem;
+  color: green;
+  top: 90%;
+  left: 45%;
+  z-index: -1;
+  animation: box linear 5s infinite;
+
+  @include mix.responsive(xs) {
+    display: none;
+  }
 }
 
 .plus4 {
-    position: absolute;
-    font-size: 2rem;
-    color: magenta;
-    top: 30%;
-    right: 3%;
-    z-index: -1;
-    animation: box linear 5s infinite;
+  position: absolute;
+  font-size: 2rem;
+  color: magenta;
+  top: 30%;
+  right: 3%;
+  z-index: -1;
+  animation: box linear 5s infinite;
+
+  @include mix.responsive(xs) {
+    display: none;
+  }
 }
 
 .plus5 {
-    position: absolute;
-    font-size: 3rem;
-    color: magenta;
-    top: 40%;
-    left: 20%;
-    z-index: -1;
-    animation: box linear 5s infinite;
+  position: absolute;
+  font-size: 3rem;
+  color: magenta;
+  top: 40%;
+  left: 20%;
+  z-index: -1;
+  animation: box linear 5s infinite;
+
+  @include mix.responsive(xs) {
+    display: none;
+  }
 }

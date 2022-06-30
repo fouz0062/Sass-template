@@ -1,12 +1,18 @@
 @use "../abstract/function" as func;
 @use "../utilities/anime";
 
+@use "../abstract/mixins" as mix;
+
 .header {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
     margin-top: 2rem;
+
+    @include mix.responsive(xs) {
+            margin-top:1rem;
+        }
 
     &--logo>a {
         font-size: 1.5rem;
@@ -19,9 +25,22 @@
             transition: 1000ms;
         }
     }
+    .burger-icon {
+        @include mix.responsive(xs) {
+                font-size: 2rem;
+            }
+
+                        @include mix.responsive(lg) {
+                            display: none;
+                        }
+    }
     &--menu {
         display: flex;
         flex-wrap: wrap;
+
+        @include mix.responsive(xs) {
+            display: none;
+        }
 
         .active {
             color: func.theme-color("active");

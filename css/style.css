@@ -19,10 +19,20 @@ img {
   width: 80%;
   margin: 1rem auto;
 }
+@media only screen and (max-width: 900px) {
+  .container {
+    width: 90%;
+  }
+}
 
 .container-2 {
   width: 80%;
   margin: 0 auto;
+}
+@media only screen and (max-width: 900px) {
+  .container-2 {
+    width: 90%;
+  }
 }
 
 @keyframes colors {
@@ -47,11 +57,9 @@ img {
 @keyframes border {
   0% {
     transform: rotate(0deg);
-    border-width: 4px;
   }
   100% {
     transform: rotate(360deg);
-    border-width: 5px;
   }
 }
 .header {
@@ -60,6 +68,11 @@ img {
   justify-content: space-between;
   align-items: center;
   margin-top: 2rem;
+}
+@media only screen and (max-width: 900px) {
+  .header {
+    margin-top: 1rem;
+  }
 }
 .header--logo > a {
   font-size: 1.5rem;
@@ -70,9 +83,24 @@ img {
   color: rgb(126, 250, 209);
   transition: 1000ms;
 }
+@media only screen and (max-width: 900px) {
+  .header .burger-icon {
+    font-size: 2rem;
+  }
+}
+@media only screen and (min-width: 900px) {
+  .header .burger-icon {
+    display: none;
+  }
+}
 .header--menu {
   display: flex;
   flex-wrap: wrap;
+}
+@media only screen and (max-width: 900px) {
+  .header--menu {
+    display: none;
+  }
 }
 .header--menu .active {
   color: rgb(14, 137, 96);
@@ -112,11 +140,9 @@ img {
 @keyframes border {
   0% {
     transform: rotate(0deg);
-    border-width: 4px;
   }
   100% {
     transform: rotate(360deg);
-    border-width: 5px;
   }
 }
 .banner {
@@ -126,19 +152,42 @@ img {
   margin-top: 10rem;
   align-items: center;
 }
+@media only screen and (max-width: 900px) {
+  .banner {
+    flex-direction: column;
+    margin: 2rem auto;
+  }
+}
 .banner--left {
   width: 40%;
+}
+@media only screen and (max-width: 900px) {
+  .banner--left {
+    width: 100%;
+    text-align: center;
+    margin: 1rem auto;
+  }
 }
 .banner--left--title {
   color: rgb(27, 240, 169);
   font-size: 2rem;
   font-weight: bolder;
 }
+@media only screen and (max-width: 900px) {
+  .banner--left--title {
+    font-size: 1.5rem;
+  }
+}
 .banner--left--para {
   padding: 0.5rem 0;
   margin-bottom: 0.5rem;
   color: rgba(0, 0, 0, 0.5);
   line-height: 2;
+}
+@media only screen and (max-width: 900px) {
+  .banner--left--para {
+    font-size: 0.9rem;
+  }
 }
 .banner--left .watch-free {
   padding-right: 3px;
@@ -160,14 +209,31 @@ img {
 .aboutus--flex--right {
   width: 50%;
 }
+@media only screen and (max-width: 900px) {
+  .aboutus--flex--right {
+    width: 100%;
+    text-align: center;
+    margin: 2rem auto;
+  }
+}
 .aboutus--flex--right--title {
   color: #fff;
   font-size: 2rem;
+}
+@media only screen and (max-width: 900px) {
+  .aboutus--flex--right--title {
+    font-size: 1.5rem;
+  }
 }
 .aboutus--flex--right--para {
   color: rgba(0, 0, 0, 0.5);
   font-size: 1.2rem;
   line-height: 2;
+}
+@media only screen and (max-width: 900px) {
+  .aboutus--flex--right--para {
+    font-size: 0.9rem;
+  }
 }
 
 /***** roadmap *****/
@@ -181,6 +247,11 @@ img {
 }
 .roadmap--para {
   color: rgba(0, 0, 0, 0.5);
+}
+@media only screen and (max-width: 900px) {
+  .roadmap--para {
+    font-size: 0.9rem;
+  }
 }
 .roadmap--line {
   width: 80px;
@@ -198,14 +269,30 @@ img {
   text-align: center;
   margin: 5rem auto;
 }
+@media only screen and (max-width: 900px) {
+  .roadmap--flex {
+    flex-direction: column;
+    margin: 1rem auto;
+  }
+}
 .roadmap--flex--items {
   width: 30%;
   position: relative;
+}
+@media only screen and (max-width: 900px) {
+  .roadmap--flex--items {
+    width: 100%;
+  }
 }
 .roadmap--flex--items--image {
   position: relative;
   filter: grayscale(100%);
   margin-bottom: 2rem;
+}
+@media only screen and (max-width: 900px) {
+  .roadmap--flex--items--image {
+    margin-bottom: 0.5rem;
+  }
 }
 .roadmap--flex--items--image::before {
   position: absolute;
@@ -219,6 +306,11 @@ img {
   left: 30%;
   transition: 5s;
 }
+@media only screen and (max-width: 900px) {
+  .roadmap--flex--items--image::before {
+    display: none;
+  }
+}
 .roadmap--flex--items--image:hover {
   filter: grayscale(0%);
   transition: 3s;
@@ -231,8 +323,18 @@ img {
   font-size: 1rem;
   color: rgb(27, 240, 169);
 }
+@media only screen and (max-width: 900px) {
+  .roadmap--flex--items--title {
+    margin: 0.5rem auto;
+  }
+}
 .roadmap--flex--items--para {
   color: rgba(0, 0, 0, 0.5);
+}
+@media only screen and (max-width: 900px) {
+  .roadmap--flex--items--para {
+    margin-bottom: 2rem;
+  }
 }
 
 /***** End roadmap *****/
@@ -240,6 +342,11 @@ img {
 .card--background {
   background-color: rgb(27, 240, 169);
   padding: 2rem 0;
+}
+@media only screen and (max-width: 900px) {
+  .card--background {
+    padding: 1rem 0;
+  }
 }
 
 .course {
@@ -250,9 +357,19 @@ img {
   font-size: 1.5rem;
   padding-bottom: 1rem;
 }
+@media only screen and (max-width: 900px) {
+  .course--title {
+    padding: 0.5rem 0;
+  }
+}
 .course--para {
   color: rgba(0, 0, 0, 0.5);
   padding-bottom: 3rem;
+}
+@media only screen and (max-width: 900px) {
+  .course--para {
+    font-size: 0.9rem;
+  }
 }
 
 .cards {
@@ -260,12 +377,23 @@ img {
   flex-wrap: wrap;
   justify-content: space-between;
 }
+@media only screen and (max-width: 900px) {
+  .cards {
+    flex-direction: column;
+  }
+}
 .cards--card {
   width: 25%;
   background-color: #fff;
   overflow: hidden;
   border-radius: 10px;
   transition: 2s;
+}
+@media only screen and (max-width: 900px) {
+  .cards--card {
+    width: 100%;
+    margin: 1rem auto;
+  }
 }
 .cards--card:hover {
   box-shadow: 5px 5px 20px #000;
@@ -301,9 +429,20 @@ img {
   justify-content: space-between;
   align-items: center;
 }
+@media only screen and (max-width: 900px) {
+  .contact-card .contact--flex {
+    flex-direction: column;
+    text-align: center;
+  }
+}
 .contact-card .contact--flex--left {
   width: 55%;
   padding: 1rem;
+}
+@media only screen and (max-width: 900px) {
+  .contact-card .contact--flex--left {
+    width: 100%;
+  }
 }
 .contact-card .contact--flex--left--title {
   font-size: 1.2rem;
@@ -328,8 +467,18 @@ img {
 .contact-card .contact--flex--left .textarea {
   resize: none;
 }
+@media only screen and (max-width: 900px) {
+  .contact-card .contact--flex--left .textarea {
+    margin-bottom: 1rem;
+  }
+}
 .contact-card .contact--flex--right {
   width: 40%;
+}
+@media only screen and (max-width: 900px) {
+  .contact-card .contact--flex--right {
+    width: 100%;
+  }
 }
 
 /***** End contact *****/
@@ -426,11 +575,9 @@ img {
 @keyframes border {
   0% {
     transform: rotate(0deg);
-    border-width: 4px;
   }
   100% {
     transform: rotate(360deg);
-    border-width: 5px;
   }
 }
 .box1 {
@@ -444,6 +591,11 @@ img {
   z-index: -1;
   animation: box linear 5s infinite;
 }
+@media only screen and (max-width: 900px) {
+  .box1 {
+    display: none;
+  }
+}
 
 .box2 {
   position: absolute;
@@ -455,6 +607,11 @@ img {
   left: 30%;
   z-index: -1;
   animation: box linear 5s infinite;
+}
+@media only screen and (max-width: 900px) {
+  .box2 {
+    display: none;
+  }
 }
 
 .box3 {
@@ -468,6 +625,11 @@ img {
   z-index: -1;
   animation: box linear 5s infinite;
 }
+@media only screen and (max-width: 900px) {
+  .box3 {
+    display: none;
+  }
+}
 
 .heart1 {
   position: absolute;
@@ -477,6 +639,11 @@ img {
   left: 20%;
   z-index: -1;
   animation: box linear 5s infinite;
+}
+@media only screen and (max-width: 900px) {
+  .heart1 {
+    display: none;
+  }
 }
 
 .heart2 {
@@ -488,6 +655,11 @@ img {
   z-index: -1;
   animation: box linear 5s infinite;
 }
+@media only screen and (max-width: 900px) {
+  .heart2 {
+    display: none;
+  }
+}
 
 .heart3 {
   position: absolute;
@@ -497,6 +669,11 @@ img {
   right: 5%;
   z-index: -1;
   animation: box linear 5s infinite;
+}
+@media only screen and (max-width: 900px) {
+  .heart3 {
+    display: none;
+  }
 }
 
 .heart4 {
@@ -508,6 +685,11 @@ img {
   z-index: -1;
   animation: box linear 5s infinite;
 }
+@media only screen and (max-width: 900px) {
+  .heart4 {
+    display: none;
+  }
+}
 
 .plus1 {
   position: absolute;
@@ -517,6 +699,11 @@ img {
   left: 3%;
   z-index: -1;
   animation: box linear 5s infinite;
+}
+@media only screen and (max-width: 900px) {
+  .plus1 {
+    display: none;
+  }
 }
 
 .plus2 {
@@ -528,6 +715,11 @@ img {
   z-index: -1;
   animation: box linear 5s infinite;
 }
+@media only screen and (max-width: 900px) {
+  .plus2 {
+    display: none;
+  }
+}
 
 .plus3 {
   position: absolute;
@@ -537,6 +729,11 @@ img {
   left: 45%;
   z-index: -1;
   animation: box linear 5s infinite;
+}
+@media only screen and (max-width: 900px) {
+  .plus3 {
+    display: none;
+  }
 }
 
 .plus4 {
@@ -548,6 +745,11 @@ img {
   z-index: -1;
   animation: box linear 5s infinite;
 }
+@media only screen and (max-width: 900px) {
+  .plus4 {
+    display: none;
+  }
+}
 
 .plus5 {
   position: absolute;
@@ -557,6 +759,11 @@ img {
   left: 20%;
   z-index: -1;
   animation: box linear 5s infinite;
+}
+@media only screen and (max-width: 900px) {
+  .plus5 {
+    display: none;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
