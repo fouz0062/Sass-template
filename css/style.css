@@ -20,6 +20,11 @@ img {
   margin: 1rem auto;
 }
 
+.container-2 {
+  width: 80%;
+  margin: 0 auto;
+}
+
 @keyframes colors {
   0% {
     color: rgb(27, 240, 169);
@@ -37,6 +42,16 @@ img {
   }
   100% {
     transform: rotate(360deg);
+  }
+}
+@keyframes border {
+  0% {
+    transform: rotate(0deg);
+    border-width: 4px;
+  }
+  100% {
+    transform: rotate(360deg);
+    border-width: 5px;
   }
 }
 .header {
@@ -75,6 +90,35 @@ img {
   transition: 1000ms;
 }
 
+@keyframes colors {
+  0% {
+    color: rgb(27, 240, 169);
+  }
+  50% {
+    color: rgb(245, 180, 31);
+  }
+  100% {
+    color: rgb(14, 137, 96);
+  }
+}
+@keyframes box {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@keyframes border {
+  0% {
+    transform: rotate(0deg);
+    border-width: 4px;
+  }
+  100% {
+    transform: rotate(360deg);
+    border-width: 5px;
+  }
+}
 .banner {
   display: flex;
   flex-wrap: wrap;
@@ -103,6 +147,192 @@ img {
   margin-left: 8px;
 }
 
+.aboutus {
+  background-color: rgb(27, 240, 169);
+  margin-top: 1.5rem;
+}
+.aboutus--flex {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+.aboutus--flex--right {
+  width: 50%;
+}
+.aboutus--flex--right--title {
+  color: #fff;
+  font-size: 2rem;
+}
+.aboutus--flex--right--para {
+  color: rgba(0, 0, 0, 0.5);
+  font-size: 1.2rem;
+  line-height: 2;
+}
+
+/***** roadmap *****/
+.roadmap {
+  margin: 2rem auto;
+  text-align: center;
+}
+.roadmap--title {
+  font-size: 1.5rem;
+  padding-bottom: 1rem;
+}
+.roadmap--para {
+  color: rgba(0, 0, 0, 0.5);
+}
+.roadmap--line {
+  width: 80px;
+  height: 10px;
+  border-radius: 10px;
+  margin: 1rem auto;
+  background-image: linear-gradient(to right, rgb(27, 240, 169), rgb(126, 250, 209), rgb(245, 180, 31), rgb(247, 206, 110));
+}
+
+.roadmap--flex {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  margin: 5rem auto;
+}
+.roadmap--flex--items {
+  width: 30%;
+  position: relative;
+}
+.roadmap--flex--items--image {
+  position: relative;
+  filter: grayscale(100%);
+  margin-bottom: 2rem;
+}
+.roadmap--flex--items--image::before {
+  position: absolute;
+  content: "";
+  padding: 1rem;
+  height: 120px;
+  width: 120px;
+  border-radius: 50%;
+  border: 3px dashed rgb(27, 240, 169);
+  top: -30%;
+  left: 30%;
+  transition: 5s;
+}
+.roadmap--flex--items--image:hover {
+  filter: grayscale(0%);
+  transition: 3s;
+}
+.roadmap--flex--items--image:hover::before {
+  animation: border 10s infinite;
+}
+.roadmap--flex--items--title {
+  margin: 1rem auto;
+  font-size: 1rem;
+  color: rgb(27, 240, 169);
+}
+.roadmap--flex--items--para {
+  color: rgba(0, 0, 0, 0.5);
+}
+
+/***** End roadmap *****/
+/***** card *****/
+.card--background {
+  background-color: rgb(27, 240, 169);
+  padding: 2rem 0;
+}
+
+.course {
+  margin: 0 auto;
+  text-align: center;
+}
+.course--title {
+  font-size: 1.5rem;
+  padding-bottom: 1rem;
+}
+.course--para {
+  color: rgba(0, 0, 0, 0.5);
+  padding-bottom: 3rem;
+}
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.cards--card {
+  width: 25%;
+  background-color: #fff;
+  overflow: hidden;
+  border-radius: 10px;
+  transition: 2s;
+}
+.cards--card:hover {
+  box-shadow: 5px 5px 20px #000;
+}
+
+.card--content {
+  padding: 1rem 0.8rem;
+}
+.card--content--title {
+  font-size: 1.2rem;
+  color: rgb(245, 180, 31);
+}
+.card--content--para {
+  color: rgba(0, 0, 0, 0.5);
+  line-height: 2;
+}
+
+/***** End card *****/
+/***** contact *****/
+.contact-background {
+  background-color: #BFBFBF;
+  padding: 2rem 0;
+}
+
+.contact-card {
+  background-color: #fff;
+  box-shadow: 2px 2px 5px #000;
+  padding: 1rem;
+}
+.contact-card .contact--flex {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+.contact-card .contact--flex--left {
+  width: 55%;
+  padding: 1rem;
+}
+.contact-card .contact--flex--left--title {
+  font-size: 1.2rem;
+}
+.contact-card .contact--flex--left--para {
+  color: rgba(0, 0, 0, 0.5);
+  padding-bottom: 0.5rem;
+}
+.contact-card .contact--flex--left--input {
+  width: 100%;
+  padding: 0.5rem;
+  margin: 0.5rem auto;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+  background-color: #BFBFBF;
+  color: rgba(0, 0, 0, 0.5);
+}
+.contact-card .contact--flex--left--input:hover, .contact-card .contact--flex--left--input:focus {
+  border: 2px solid rgb(27, 240, 169);
+}
+.contact-card .contact--flex--left .textarea {
+  resize: vertical;
+}
+.contact-card .contact--flex--right {
+  width: 40%;
+}
+
+/***** End contact *****/
 .btn, .btn-outline, .btn-primary {
   padding: 0.5rem 1rem;
   font-size: 1rem;
@@ -144,6 +374,16 @@ img {
   }
   100% {
     transform: rotate(360deg);
+  }
+}
+@keyframes border {
+  0% {
+    transform: rotate(0deg);
+    border-width: 4px;
+  }
+  100% {
+    transform: rotate(360deg);
+    border-width: 5px;
   }
 }
 .box1 {
